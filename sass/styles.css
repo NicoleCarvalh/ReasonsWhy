@@ -1,0 +1,98 @@
+@font-face {
+  font-family: "YouthTouch";
+  src: url(../assets/font/YouthTouch/YouthTouch.ttf) format(TrueType);
+}
+@font-face {
+  font-family: "LiberationSans-Regular";
+  src: url(../assets/font/LiberationSans/LiberationSans-Regular.ttf) format(TrueType);
+}
+@font-face {
+  font-family: "MadeVoyager";
+  src: url(../assets/font/MadeVoyager/MADEVoyagerPERSONALUSE-Regular.otf) format(TrueType);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "YouthTouch";
+}
+
+body {
+  overflow: hidden;
+}
+body h1 {
+  font-family: "YouthTouch";
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+}
+body .line {
+  height: 2rem;
+  background-color: gray;
+  border-style: hidden;
+}
+
+@media (min-width: 700px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.scene {
+  background-size: 100%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  height: 47vh;
+}
+
+#scene-1 {
+  background-image: url(../assets/img/bg-Arthur.svg);
+}
+#scene-1 .scene-character {
+  height: 35%;
+  position: absolute;
+  left: 40%;
+}
+#scene-1 .scene-balloon {
+  height: 10%;
+  position: absolute;
+  left: 20%;
+  top: 10%;
+}
+#scene-1 .scene-balloon:hover {
+  filter: invert(13%) sepia(94%) saturate(6713%) hue-rotate(359deg) brightness(105%) contrast(108%);
+}
+#scene-2 {
+  background-image: url(../assets/img/bg-Nicole.svg);
+}
+#scene-2 .scene-character {
+  height: 35%;
+  position: absolute;
+  left: 40%;
+}
+#scene-2 .reasonsContainer .scene-balloon {
+  left: 60%;
+  height: 7rem;
+  position: relative;
+  bottom: 2.6rem;
+}
+#scene-2 .reasonsContainer p {
+  font-family: "MadeVoyager";
+  font-size: 0.7rem;
+  margin-left: 68%;
+  position: relative;
+  margin-top: -40%;
+  max-width: 40%;
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  height: 10%;
+}/*# sourceMappingURL=styles.css.map */

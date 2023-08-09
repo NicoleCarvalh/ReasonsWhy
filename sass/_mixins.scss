@@ -1,0 +1,28 @@
+@mixin scene {
+  background-size: 100%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  height: 47vh;
+}
+
+@mixin center {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin character {
+  height: 35%;
+  position: absolute;
+  left: 40%;
+}
+
+@mixin balloon {
+  height: 10%;
+  position: absolute;
+}
+
+@mixin pc {
+  @media(min-width: 700px) {
+    @content
+  }
+}

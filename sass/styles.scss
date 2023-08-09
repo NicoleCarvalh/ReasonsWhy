@@ -1,0 +1,103 @@
+@use 'variables';
+@use 'mixins';
+
+@font-face {
+  font-family: 'YouthTouch';
+  src: url(../assets/font/YouthTouch/YouthTouch.ttf) format(TrueType);
+}
+
+@font-face {
+  font-family: 'MadeVoyager';
+  src: url(../assets/font/MadeVoyager/MADEVoyagerPERSONALUSE-Regular.otf) format(TrueType);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'YouthTouch';
+}
+
+body {
+  overflow: hidden;
+
+  h1 {
+    font-family: 'YouthTouch';
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    @include mixins.center;
+  }
+
+  .line {
+    height: 2rem;
+    background-color: gray;
+    border-style: hidden;
+  }
+}
+
+.container {
+  @include mixins.pc {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.scene {
+  @include mixins.scene;
+}
+
+#scene {
+  &-1 {
+    background-image: url(../assets/img/bg-Arthur.svg);
+
+    .scene-character {
+      @include mixins.character;
+    }
+
+    .scene-balloon {
+      @include mixins.balloon;
+      left: 20%;
+      top: 10%;
+
+      &:hover {
+        filter: invert(13%) sepia(94%) saturate(6713%) hue-rotate(359deg) brightness(105%) contrast(108%);
+      }
+    }
+  }
+
+  &-2 {
+    background-image: url(../assets/img/bg-Nicole.svg);
+
+    .scene-character {
+      @include mixins.character;
+    }
+
+    .reasonsContainer {
+      .scene-balloon {
+        left: 60%;
+        height: 7rem;
+        position: relative;
+        bottom: 2.6rem;
+
+      }
+
+      p {
+        font-family: 'MadeVoyager';
+        font-size: .7rem;
+        margin-left: 68%;
+        position: relative;
+        margin-top: -40%;
+        max-width: 40%;
+        text-align: center;
+      }
+    }
+  }
+}
+
+footer {
+  @include mixins.center;
+  background-color: black;
+  color: white;
+  height: 10%;
+}
