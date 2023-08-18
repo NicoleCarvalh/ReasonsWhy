@@ -3,10 +3,6 @@
   src: url(../assets/font/YouthTouch/YouthTouch.ttf) format(TrueType);
 }
 @font-face {
-  font-family: "LiberationSans-Regular";
-  src: url(../assets/font/LiberationSans/LiberationSans-Regular.ttf) format(TrueType);
-}
-@font-face {
   font-family: "MadeVoyager";
   src: url(../assets/font/MadeVoyager/MADEVoyagerPERSONALUSE-Regular.otf) format(TrueType);
 }
@@ -14,7 +10,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "YouthTouch";
+  font-family: "MadeVoyager";
 }
 
 body {
@@ -54,6 +50,7 @@ body .line {
 #scene-1 .scene-character {
   height: 35%;
   position: absolute;
+  bottom: 1;
   left: 40%;
 }
 #scene-1 .scene-balloon {
@@ -71,6 +68,7 @@ body .line {
 #scene-2 .scene-character {
   height: 35%;
   position: absolute;
+  bottom: 1;
   left: 40%;
 }
 #scene-2 .reasonsContainer .scene-balloon {
@@ -80,7 +78,6 @@ body .line {
   bottom: 2.6rem;
 }
 #scene-2 .reasonsContainer p {
-  font-family: "MadeVoyager";
   font-size: 0.7rem;
   margin-left: 68%;
   position: relative;
@@ -95,4 +92,5 @@ footer {
   background-color: black;
   color: white;
   height: 10%;
+  font-size: 1rem;
 }/*# sourceMappingURL=styles.css.map */
