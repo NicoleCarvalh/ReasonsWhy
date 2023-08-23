@@ -7,9 +7,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="399.0658"
-   height="275.33551"
-   viewBox="0 0 399.0658 275.33552"
+   width="356.54724"
+   height="223.31165"
+   viewBox="0 0 356.54725 223.31165"
    version="1.1"
    id="svg1975"
    sodipodi:docname="caixa-de-texto-Nicole.svg"
@@ -36,16 +36,16 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:window-width="1920"
-     inkscape:window-height="991"
+     inkscape:window-height="1051"
      id="namedview1977"
      showgrid="false"
      inkscape:zoom="1.8101934"
-     inkscape:cx="269.30742"
-     inkscape:cy="84.923736"
+     inkscape:cx="201.47432"
+     inkscape:cy="84.923735"
      inkscape:window-x="-9"
      inkscape:window-y="-9"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g1883"
+     inkscape:current-layer="g2807"
      inkscape:document-rotation="0" />
   <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
   <title
@@ -109,7 +109,7 @@
      stroke-width="1"
      fill="none"
      fill-rule="evenodd"
-     transform="translate(-2059.7633,-29.382432)">
+     transform="translate(-2102.2818,-29.382432)">
     <g
        id="Illustration-5"
        transform="translate(-211,-231)">
@@ -132,17 +132,17 @@
                    d="m 1.871946,-244.66808 c 66.170895,-27.60573 76.561136,9.93685 76.334246,41.61149 -0.2269,31.67463 -34.64624,57.10632 -76.8790908,56.80378 -42.2328492,-0.30252 -76.2843382,-26.22467 -76.0574442,-57.89931 0.226894,-31.67463 5.059929,-68.25965 74.26686996,-40.28242"
                    id="path1766"
                    fill="#cce3ff"
-                   style="stroke-width:1.382"
+                   style="fill:#ffe680;stroke-width:1.382"
                    sodipodi:nodetypes="csssc"
                    transform="matrix(-1,0,0,1,-102.9634,450.33944)" />
                 <polygon
                    id="polygon1874"
                    fill="#2437a8"
-                   points="154.0815,151.4269 155.2665,133.6589 162.6665,151.5989 "
-                   transform="matrix(4.1127641,3.6629296,1.9652433,-3.4419632,-1103.3346,220.60265)"
-                   inkscape:transform-center-x="15.192794"
-                   inkscape:transform-center-y="-13.211125"
-                   style="fill:#cce3ff;fill-opacity:1" />
+                   points="155.2665,133.6589 162.6665,151.5989 154.0815,151.4269 "
+                   transform="matrix(-0.55003616,1.0390605,0.8031111,0.3930733,-205.50509,-13.845665)"
+                   inkscape:transform-center-x="-0.26018919"
+                   inkscape:transform-center-y="-2.8390266"
+                   style="fill:#ffe680;fill-opacity:1" />
               </g>
             </g>
           </g>

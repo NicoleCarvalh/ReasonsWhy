@@ -15,11 +15,20 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'MadeVoyager';
+  // overflow: hidden;
 }
 
 body {
-  overflow: hidden;
+  height: 100vh;
+  width: 100%;
+
+  main {
+    width: 100%;
+    height: 100%;
+    // flex: 1 0 600px;
+    // max-width: 100%;
+    // position: relative;
+  }
 
   h1 {
     font-family: 'YouthTouch';
@@ -29,36 +38,49 @@ body {
   }
 
   .line {
-    height: 2rem;
+    height: 1rem;
     background-color: gray;
     border-style: hidden;
   }
 }
 
 .container {
-  @include mixins.pc {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
+  border: 2px solid red;
+
+
+  // @include mixins.pc {
+  //   display: flex;
+  //   flex-direction: row;
+  //   flex-wrap: wrap;
+  // }
 }
 
 .scene {
   @include mixins.scene;
+  position: relative;
 }
 
 #scene {
   &-1 {
-    background-image: url(../assets/img/bg-Arthur.svg);
+    background-image: url(../assets/img/bg-Arthur.png);
+    border: 2px solid rgb(55, 255, 0);
+    height: 48.5vh;
 
     .scene-character {
       @include mixins.character;
+      height: 70%;
     }
 
     .scene-balloon {
-      @include mixins.balloon;
-      left: 20%;
-      top: 10%;
+      left: 15%;
+      height: 15%;
+      position: absolute;
+      width: 20%;
+      border: 2px solid rgb(0, 255, 68);
+
+      img {
+        width: 100%;
+      }
 
       &:hover {
         filter: invert(13%) sepia(94%) saturate(6713%) hue-rotate(359deg) brightness(105%) contrast(108%);
@@ -67,37 +89,50 @@ body {
   }
 
   &-2 {
-    background-image: url(../assets/img/bg-Nicole.svg);
+    background-image: url(../assets/img/bg-Nicole.png);
+    border: 2px solid rgb(195, 0, 255);
+    height: 48.9vh;
 
     .scene-character {
       @include mixins.character;
+      height: 60%;
+      left: 25%
     }
 
     .reasonsContainer {
-      .scene-balloon {
-        left: 60%;
-        height: 7rem;
-        position: relative;
-        bottom: 2.6rem;
+      border: 2px solid rgb(195, 0, 255);
+      height: 40%;
+      margin-left: 50%;
+      display: flex;
+      position: absolute;
+      bottom: 10%;
+      justify-content: center;
+      align-items: center;
 
+
+      .scene-balloon {
+        max-height: 100%;
+        max-width: 100%;
+        border: 2px solid rgb(242, 255, 0);
       }
 
+
       p {
-        font-size: .7rem;
-        margin-left: 68%;
-        position: relative;
-        margin-top: -40%;
-        max-width: 40%;
+        font-family: 'MadeVoyager';
+        font-size: clamp(.8rem, 2.5vw, 1rem);
+        position: absolute;
+        border: 2px solid rgb(0, 8, 255);
         text-align: center;
+        max-width: 90%;
       }
     }
   }
 }
 
-footer {
-  @include mixins.center;
-  background-color: black;
-  color: white;
-  height: 10%;
-  font-size: 1rem;
-}
+// footer {
+//   @include mixins.center;
+//   background-color: black;
+//   color: white;
+//   height: 1%;
+//   font-size: 1rem;
+// }

@@ -1,8 +1,7 @@
 @mixin scene {
-  background-size: 100%;
+  background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
-  height: 47vh;
 }
 
 @mixin center {
@@ -11,15 +10,9 @@
 }
 
 @mixin character {
-  height: 35%;
   position: absolute;
-  //  bottom: ;
   left: 40%;
-}
-
-@mixin balloon {
-  height: 10%;
-  position: absolute;
+  bottom: 0;
 }
 
 @mixin pc {
