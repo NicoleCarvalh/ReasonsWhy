@@ -40,9 +40,9 @@ const reasons = [
   "You make me feel cherished and loved",
 ];
 
-let shuffledReasons = reasons.slice(); // Crie uma cópia do array original
+let shuffledReasons = reasons.slice(); // cópia do array original
 
-// Embaralhe o array de razões aleatoriamente
+// embaralho do array de razões aleatoriamente
 shuffledReasons.sort(() => Math.random() - 0.5);
 
 let currentReasonIndex = 0;
